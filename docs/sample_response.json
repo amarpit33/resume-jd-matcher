@@ -1,0 +1,256 @@
+{
+  "overall_match_score": 67.8,
+  "section_scores": {
+    "skills": 45.0,
+    "experience": 78.6,
+    "seniority": 100.0
+  },
+  "skills_matched": [
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "AWS"
+  ],
+  "skills_missing": [
+    "FastAPI",
+    "Kafka",
+    "Kubernetes",
+    "CI/CD",
+    "Go",
+    "Terraform",
+    "Prometheus",
+    "Grafana"
+  ],
+  "skills_breakdown": {
+    "required_matched": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS"
+    ],
+    "required_missing": [
+      "FastAPI",
+      "Kafka",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "nice_matched": [],
+    "nice_missing": [
+      "Go",
+      "Terraform",
+      "Prometheus",
+      "Grafana"
+    ],
+    "matched_via_text": []
+  },
+  "missing_skill_advice": [
+    {
+      "skill": "FastAPI",
+      "advice": "You have built Flask services; consider learning FastAPI to match the target role's preferred framework without fabricating new experience."
+    },
+    {
+      "skill": "Kafka",
+      "advice": "Your background with Celery for asynchronous tasks is relevant, but you must learn Kafka before claiming event-driven workflow expertise."
+    },
+    {
+      "skill": "Kubernetes",
+      "advice": "You have Docker experience; study Kubernetes orchestration concepts before implying container management at scale."
+    },
+    {
+      "skill": "CI/CD",
+      "advice": "You used Jenkins for automation; review modern CI/CD pipelines to align your language with the job description's requirements."
+    }
+  ],
+  "experience_matches": [
+    {
+      "responsibility": "Design, build and operate high-throughput Python microservices for payment processing.",
+      "verdict": "strong",
+      "evidence": [
+        "Built and maintained Django REST endpoints for the loan-origination product used by 40 partner banks"
+      ],
+      "reason": "Built and maintained Django REST endpoints"
+    },
+    {
+      "responsibility": "Own REST and gRPC APIs consumed by web, mobile and partner integrations.",
+      "verdict": "strong",
+      "evidence": [
+        "Built and maintained Django REST endpoints for the loan-origination product used by 40 partner banks"
+      ],
+      "reason": "Built and maintained Django REST API"
+    },
+    {
+      "responsibility": "Build event-driven workflows on Kafka for settlement and reconciliation.",
+      "verdict": "partial",
+      "evidence": [
+        "Moved nightly reconciliation jobs from cron scripts to Celery workers, cutting failures by 60%",
+        "Wrote Flask services to ingest CSV uploads from clients into PostgreSQL"
+      ],
+      "reason": "Migrated batch reconciliation jobs to a task queue"
+    },
+    {
+      "responsibility": "Improve reliability: observability, alerting and on-call for your services.",
+      "verdict": "partial",
+      "evidence": [
+        "Moved nightly reconciliation jobs from cron scripts to Celery workers, cutting failures by 60%",
+        "Fixed production bugs and wrote unit tests with pytest"
+      ],
+      "reason": "Migrated job execution from cron to Celery"
+    },
+    {
+      "responsibility": "Optimize PostgreSQL schemas and queries for scale.",
+      "verdict": "strong",
+      "evidence": [
+        "Worked on database query tuning in PostgreSQL for slow reporting pages"
+      ],
+      "reason": "tuned PostgreSQL queries for reports"
+    },
+    {
+      "responsibility": "Mentor engineers and lead technical design reviews.",
+      "verdict": "strong",
+      "evidence": [
+        "Reviewed pull requests and mentored two interns"
+      ],
+      "reason": "Reviewed PRs and mentored interns"
+    },
+    {
+      "responsibility": "Work with product to break down ambiguous problems into shippable increments.",
+      "verdict": "partial",
+      "evidence": [
+        "Moved nightly reconciliation jobs from cron scripts to Celery workers, cutting failures by 60%",
+        "Fixed production bugs and wrote unit tests with pytest",
+        "Wrote Flask services to ingest CSV uploads from clients into PostgreSQL"
+      ],
+      "reason": "Improved job reliability via task queue"
+    }
+  ],
+  "seniority": {
+    "jd_level": "senior",
+    "jd_min_years": 5.0,
+    "candidate_years": 6.3,
+    "verdict": "aligned",
+    "score": 100.0
+  },
+  "bullet_suggestions": [
+    {
+      "original": "Moved nightly reconciliation jobs from cron scripts to Celery workers, cutting failures by 60%",
+      "role": "Software Engineer @ Finlytics Pvt Ltd",
+      "suggestions": [
+        "Designed and operated Python microservices using Celery for nightly reconciliation workflows.",
+        "Improved service reliability by migrating cron scripts to asynchronous Python workers, reducing failures by 60%."
+      ],
+      "why": "Uses 'designed/operated' and 'improved reliability' which aligns with responsibilities while keeping the exact 60% metric.",
+      "warnings": [
+        "rewrite 1: uses JD terms your resume doesn't support (operated, microservices, workflows); keep only if true",
+        "rewrite 2: uses JD terms your resume doesn't support (reliability); keep only if true"
+      ]
+    },
+    {
+      "original": "Wrote Flask services to ingest CSV uploads from clients into PostgreSQL",
+      "role": "Associate Engineer @ DataNest Solutions",
+      "suggestions": [
+        "Built Python services to ingest client CSV uploads into PostgreSQL databases.",
+        "Developed RESTful APIs using Flask and Django for data ingestion from external clients."
+      ],
+      "why": "Maps 'Flask services' to 'RESTful APIs' and keeps the core action of ingesting data into PostgreSQL.",
+      "warnings": [
+        "rewrite 2: uses JD terms your resume doesn't support (apis); keep only if true"
+      ]
+    },
+    {
+      "original": "Fixed production bugs and wrote unit tests with pytest",
+      "role": "Associate Engineer @ DataNest Solutions",
+      "suggestions": [
+        "Fixed production bugs in Python services and implemented unit tests using pytest.",
+        "Enhanced code quality by writing comprehensive unit tests for critical production fixes."
+      ],
+      "why": "Focuses on fixing bugs and testing without inflating the scope beyond 'Associate Engineer' duties.",
+      "warnings": []
+    },
+    {
+      "original": "Helped the team set up Docker-based local development",
+      "role": "Software Engineer @ Finlytics Pvt Ltd",
+      "suggestions": [
+        "Assisted the team in setting up Docker-based local development environments.",
+        "Configured Docker containers to streamline local development workflows for the engineering team."
+      ],
+      "why": "Uses 'assisted' and 'configured' to accurately reflect help rather than ownership, matching the original intent.",
+      "warnings": [
+        "rewrite 2: uses JD terms your resume doesn't support (workflows); keep only if true"
+      ]
+    }
+  ],
+  "qualification_signals": [
+    {
+      "kind": "under",
+      "signal": "Missing Kafka experience limits ability to claim event-driven workflow design; Celery is a different paradigm."
+    },
+    {
+      "kind": "under",
+      "signal": "Lack of Kubernetes and CI/CD specific terminology may hinder screening against senior-level infrastructure requirements."
+    }
+  ],
+  "summary": "Your Python, PostgreSQL, and AWS experience provides a strong foundation for backend engineering, but the missing Kafka and Kubernetes skills create a significant gap for senior-level event-driven architecture. The most useful change is to explicitly mention your Celery usage as asynchronous task management while learning Kafka terminology to avoid under-qualification signals.",
+  "jd": {
+    "title": "Senior Backend Engineer",
+    "company": "Orbitpay",
+    "seniority": "senior",
+    "min_years_experience": 5.0,
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Django",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD"
+    ],
+    "nice_to_have_skills": [
+      "Go",
+      "Terraform",
+      "Prometheus",
+      "Grafana"
+    ],
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "Django",
+      "PostgreSQL",
+      "Redis",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "CI/CD",
+      "Go",
+      "Terraform",
+      "Prometheus",
+      "Grafana"
+    ],
+    "responsibilities": [
+      "Design, build and operate high-throughput Python microservices for payment processing.",
+      "Own REST and gRPC APIs consumed by web, mobile and partner integrations.",
+      "Build event-driven workflows on Kafka for settlement and reconciliation.",
+      "Improve reliability: observability, alerting and on-call for your services.",
+      "Optimize PostgreSQL schemas and queries for scale.",
+      "Mentor engineers and lead technical design reviews.",
+      "Work with product to break down ambiguous problems into shippable increments."
+    ]
+  },
+  "jd_text": "Senior Backend Engineer (Python) - Orbitpay\nBengaluru / Remote (India)\n\nAbout the role\nOrbitpay is building payments infrastructure for SMBs across South Asia. We're looking for a Senior Backend Engineer to own core services in our payments platform.\n\nWhat you'll do\n- Design, build and operate high-throughput Python microservices for payment processing\n- Own REST and gRPC APIs consumed by web, mobile and partner integrations\n- Build event-driven workflows on Kafka for settlement and reconciliation\n- Improve reliability: observability, alerting and on-call for your services\n- Optimize PostgreSQL schemas and queries for scale\n- Mentor engineers and lead technical design reviews\n- Work with product to break down ambiguous problems into shippable increments\n\nWhat we're looking for\n- 5+ years of backend software engineering experience\n- Strong Python (FastAPI or Django)\n- Production experience with PostgreSQL and Redis\n- Experience with Kafka or another message broker\n- Docker and Kubernetes in production\n- Experience with AWS\n- CI/CD pipelines and automated testing\n\nNice to have\n- Payments or fintech domain experience\n- Go\n- Terraform\n- Prometheus and Grafana",
+  "jd_cached": true,
+  "resume_cached": true,
+  "model": "qwen3.5:4b",
+  "timings_s": {
+    "parse": 0.0,
+    "experience": 136.4,
+    "gap_analysis": 80.8,
+    "total": 217.3
+  }
+}

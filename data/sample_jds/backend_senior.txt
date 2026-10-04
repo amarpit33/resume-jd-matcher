@@ -1,0 +1,32 @@
+Senior Backend Engineer (Python) - Orbitpay
+Bengaluru / Remote (India)
+
+About the role
+Orbitpay is building payments infrastructure for SMBs across South Asia. We're looking for a Senior Backend Engineer to own core services in our payments platform.
+
+What you'll do
+- Design, build and operate high-throughput Python microservices for payment processing
+- Own REST and gRPC APIs consumed by web, mobile and partner integrations
+- Build event-driven workflows on Kafka for settlement and reconciliation
+- Improve reliability: observability, alerting and on-call for your services
+- Optimize PostgreSQL schemas and queries for scale
+- Mentor engineers and lead technical design reviews
+- Work with product to break down ambiguous problems into shippable increments
+
+What we're looking for
+- 5+ years of backend software engineering experience
+- Strong Python (FastAPI or Django)
+- Production experience with PostgreSQL and Redis
+- Experience with Kafka or another message broker
+- Docker and Kubernetes in production
+- Experience with AWS
+- CI/CD pipelines and automated testing
+
+Nice to have
+- Payments or fintech domain experience
+- Go
+- Terraform
+- Prometheus and Grafana
+
+Apply now
+Save job

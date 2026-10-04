@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+# history + parse caches contain resume/JD text
+data/*.db
+# keep real resumes out of git; only the fictional samples are tracked
+data/my_resumes/
+data/my_jds/
+.DS_Store
+*.log
