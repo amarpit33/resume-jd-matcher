@@ -23,10 +23,12 @@ Contents: [Demo](#demo) · [Quick start](#quick-start) · [User guide](#user-gui
 
 ## Demo
 
-> **Screenshot placeholder:** the UI's result view (score gauge, missing-skill tags, side-by-side bullet
-> rewrites). Drop a capture at `docs/screenshot.png` and replace this note with `![UI](docs/screenshot.png)`.
+![Demo: upload a resume, paste a Lever job link, preview the extracted JD, analyze, read the score, missing skills and flagged rewrites, then History](docs/demo.gif)
 
-The output below is **real**: the fictional sample resume (`data/sample_resumes/`) against the sample JD
+*Real recording of the UI: fictional sample resume vs a live Lever posting, `qwen3.5:4b` on an 8 GB M1. The
+5-minute analysis is fast-forwarded.*
+
+The CLI output below is **real**: the fictional sample resume (`data/sample_resumes/`) against the sample JD
 (`data/sample_jds/backend_senior.txt`), run on an 8 GB M1 with `qwen3.5:4b`. Full report:
 [docs/demo.md](docs/demo.md). Raw API-shaped JSON: [docs/sample_response.json](docs/sample_response.json).
 

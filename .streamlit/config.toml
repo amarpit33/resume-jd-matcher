@@ -1,0 +1,10 @@
+# Local-only tool: bind to localhost and hide Streamlit's deploy/share toolbar.
+[server]
+address = "localhost"
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

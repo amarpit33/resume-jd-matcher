@@ -168,7 +168,7 @@ with tab_analyze:
             jd_value = st.text_area("Paste the full job description", height=320, key="jd_paste")
             source_url = None
         else:
-            url_col, btn_col = st.columns([4, 1])
+            url_col, btn_col = st.columns([3, 1])
             with url_col:
                 url = st.text_input("Job posting URL", placeholder="https://jobs.lever.co/...", key="jd_url",
                                     label_visibility="collapsed")
